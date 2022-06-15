@@ -1,4 +1,13 @@
+import About from "../components/About";
+import Skills from "../components/Skills";
+import Project from "../components/Project";
+
 export default function Home() {
-	// return <div className={styles.container}>home</div>;
-	return <div>home</div>;
+	return (
+		<>
+			<About />
+			<Skills />
+			<Project />
+		</>
+	);
 }
