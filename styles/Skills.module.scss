@@ -1,0 +1,25 @@
+.conteiner {
+	padding: 3rem 0;
+	p {
+		margin: 1.5rem 0;
+		color: rgb(105, 105, 105);
+	}
+}
+
+.skills {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+	li {
+		margin: 1rem 2rem;
+		font-size: 1rem;
+		font-weight: 500;
+		svg {
+			vertical-align: middle;
+			font-size: 1.7rem;
+			margin: 0 0.5rem 0 0;
+		}
+	}
+}
