@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
 	return (
 		<>
 			<Head>
-				<title>Portfolio</title>
+				<title>Alex Sliusarenko - Front End Developer</title>
 				<link rel="shortcut icon" href="favicon.ico" />
 			</Head>
 			<Layout>
