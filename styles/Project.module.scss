@@ -1,0 +1,54 @@
+.conteiner {
+	padding: 3rem 0;
+	h1 {
+		margin: 0 0 2rem;
+	}
+}
+
+.carousel {
+	cursor: grab;
+	overflow: hidden;
+}
+.inner_carousel {
+	display: flex;
+}
+
+.project_cart {
+	min-height: 20rem;
+	min-width: 33.333%;
+	padding: 1rem;
+	margin-right: 3.5rem;
+	&:last-child {
+		margin-right: 0;
+	}
+	.img_conteiner {
+		border-radius: 10px;
+		overflow: hidden;
+		height: 250px;
+		width: 100%;
+		position: relative;
+		margin: 1rem 0;
+		pointer-events: none;
+		transition: all 0.5s ease;
+		.img_cart {
+			position: absolute;
+		}
+	}
+	h1 {
+		margin: 0;
+	}
+	p {
+		margin: 1rem 0;
+	}
+	a {
+		cursor: pointer;
+	}
+	&:hover {
+		.img_conteiner {
+			transform: scale(1.05);
+		}
+		a {
+			border-bottom: 2px dashed black;
+		}
+	}
+}
