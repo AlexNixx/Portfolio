@@ -23,14 +23,6 @@ const Skills = () => {
 			</p>
 			<ul className={styles.skills}>
 				<li>
-					<SiReact />
-					React
-				</li>
-				<li>
-					<SiRedux />
-					Redux
-				</li>
-				<li>
 					<SiHtml5 />
 					HTML5
 				</li>
@@ -39,12 +31,20 @@ const Skills = () => {
 					CSS3
 				</li>
 				<li>
+					<SiSass />
+					SASS
+				</li>
+				<li>
 					<SiJavascript />
 					JavaScript
 				</li>
 				<li>
-					<SiSass />
-					SASS
+					<SiReact />
+					React
+				</li>
+				<li>
+					<SiRedux />
+					Redux
 				</li>
 				<li>
 					<SiGit />

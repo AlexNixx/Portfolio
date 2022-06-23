@@ -1,5 +1,5 @@
 .conteiner {
-	padding: 3rem 0;
+	padding: 3rem 0 0;
 	p {
 		margin: 1.5rem 0;
 		color: rgb(105, 105, 105);
@@ -16,6 +16,9 @@
 		margin: 1rem 2rem;
 		font-size: 1rem;
 		font-weight: 500;
+		min-width: 33.3333%;
+		max-width: 100%;
+		text-align: center;
 		svg {
 			vertical-align: middle;
 			font-size: 1.7rem;
