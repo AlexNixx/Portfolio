@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import styles from "../styles/Footer.module.scss";
 import logo from "../public/logo.svg";
+import { shimmer, toBase64 } from "../utils/blureDataUrl";
 
 const Footer = () => {
 	return (
