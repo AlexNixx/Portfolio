@@ -1,9 +1,10 @@
+@use "variables" as v;
+
 .container {
 	padding: 6rem 8% 4rem;
+	background-color: v.$white;
 }
 
 .logo {
 	cursor: pointer;
-	padding: 0;
-	margin: 0;
 }

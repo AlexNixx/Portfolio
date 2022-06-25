@@ -1,22 +1,23 @@
+@use "variables" as v;
+
 .footer {
-	padding: 6rem 8%;
-	background-color: rgb(248, 248, 248);
 	display: flex;
 	flex-direction: column;
+	background-color: v.$dark-white;
+	padding: 6rem 8%;
 }
 
-.sub_container {
+.description {
 	margin: 0 0 6rem 0;
 	h1 {
 		font-size: 2.8rem;
 	}
 	p {
-		margin: 2rem 0;
-		color: rgb(105, 105, 105);
-		line-height: 2rem;
+		color: v.$grey;
+		margin: v.$defaul-margin;
 	}
 	a {
-		border-bottom: 2px dashed black;
+		border-bottom: 2px dashed v.$text;
 		&:hover {
 			border: none;
 		}
@@ -34,11 +35,33 @@
 	justify-content: space-between;
 	align-items: center;
 	li {
+		margin: 0 0 0 2rem;
+		&:first-child {
+			margin: 0;
+		}
 		a {
-			margin: 0 0 0 2rem;
+			font-weight: 500;
 			&:hover {
-				color: rgb(105, 105, 105);
+				color: v.$blue;
+				border-bottom: 2px dashed v.$blue;
 			}
 		}
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.footer {
+		padding: 3rem 8%;
+	}
+	.description {
+		margin: 0 0 3rem 0;
+		h1 {
+			font-size: 2rem;
+		}
+	}
+	.container {
+		display: flex;
+		flex-direction: column-reverse;
+		height: 5rem;
 	}
 }

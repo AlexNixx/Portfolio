@@ -1,0 +1,252 @@
+@use "variables" as v;
+
+.wrapper {
+	margin: v.$defaul-margin;
+}
+
+.conteiner {
+	margin-bottom: 3rem;
+	&:last-child {
+		margin-bottom: 0rem;
+	}
+}
+
+.header_conteiner {
+	font-size: 2rem;
+}
+
+.description {
+	color: v.$grey;
+	margin: v.$defaul-margin;
+}
+
+.img_conteiner {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.img {
+	position: absolute;
+	object-fit: contain;
+}
+
+.intro_conteiner {
+	.project_name {
+		font-size: 3.5rem;
+	}
+	.intro_list {
+		display: flex;
+		flex-direction: row;
+		margin: v.$defaul-margin;
+		ul {
+			margin-right: 10rem;
+			display: flex;
+			flex-direction: column;
+		}
+		li {
+			margin: 0.5rem 0;
+			&:first-child {
+				font-weight: 600;
+			}
+			a {
+				color: v.$orange;
+				font-weight: 600;
+				&:hover {
+					border-bottom: 2px dashed v.$orange;
+				}
+			}
+		}
+	}
+
+	.img_intro {
+		height: 30rem;
+		width: 60%;
+		margin: 0 auto;
+	}
+}
+
+.goal_conteiner {
+	text-align: center;
+}
+
+.gallery_conteiner {
+	height: 70rem;
+	.parent {
+		display: grid;
+		grid-template-areas:
+			"main second"
+			"main third";
+		grid-gap: 3rem;
+		height: 100%;
+		.div1 {
+			grid-area: main;
+		}
+		.div2 {
+			grid-area: second;
+		}
+		.div3 {
+			grid-area: third;
+		}
+	}
+}
+
+.problems_conteiner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+	width: 60%;
+	margin: 0 auto 3rem;
+	.img_conteiner {
+		height: 30rem;
+		width: 100%;
+	}
+}
+
+.lesson_conteiner {
+	width: 60%;
+}
+
+@media screen and (max-width: 1024px) {
+	.intro_conteiner {
+		.img_intro {
+			height: 30rem;
+			width: 85%;
+			margin: 0 auto;
+		}
+	}
+	.gallery_conteiner {
+		height: 60rem;
+	}
+
+	.problems_conteiner {
+		width: 80%;
+	}
+
+	.lesson_conteiner {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.conteiner {
+		margin-bottom: 2rem;
+	}
+	.intro_conteiner {
+		.intro_list {
+			margin: v.$small-margin;
+			ul {
+				margin-right: 5rem;
+			}
+		}
+
+		.img_intro {
+			height: 25rem;
+			width: 80%;
+			margin: 0 auto;
+		}
+	}
+
+	.gallery_conteiner {
+		height: 50rem;
+	}
+
+	.problems_conteiner {
+		.img_conteiner {
+			height: 25rem;
+			width: 100%;
+		}
+	}
+
+	.lesson_conteiner {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.wrapper {
+		margin: 0;
+	}
+
+	.description {
+		margin: v.$small-margin;
+	}
+
+	.conteiner {
+		margin-bottom: 3rem;
+	}
+
+	.intro_conteiner {
+		.project_name {
+			font-size: 3rem;
+		}
+		.intro_list {
+			justify-content: space-between;
+			ul {
+				margin: 0;
+			}
+		}
+
+		.img_intro {
+			height: 17rem;
+			width: 100%;
+			margin: 0;
+		}
+	}
+
+	.gallery_conteiner {
+		height: 90rem;
+		.parent {
+			grid-template-areas:
+				"main"
+				"main"
+				"main"
+				"second"
+				"third";
+			grid-gap: 2rem;
+		}
+	}
+
+	.problems_conteiner {
+		width: 100%;
+		.img_conteiner {
+			height: 17rem;
+			width: 100%;
+		}
+	}
+
+	.lesson_conteiner {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.intro_conteiner {
+		.intro_list {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			ul {
+				margin: 0.5rem 0;
+			}
+		}
+		.img_intro {
+			height: 12rem;
+		}
+	}
+
+	.gallery_conteiner {
+		height: 75rem;
+	}
+
+	.problems_conteiner {
+		.img_conteiner {
+			height: 12rem;
+		}
+	}
+}

@@ -6,7 +6,7 @@ import Link from "next/link";
 import photo from "../public/test2.jpg";
 import { shimmer, toBase64 } from "../utils/blureDataUrl";
 
-const Project = () => {
+const Project = ({ title = "What I've been working on" }) => {
 	const projects = [
 		{
 			index: 1,
@@ -59,9 +59,10 @@ const Project = () => {
 		console.log(carousel.current.scrollWidth, carousel.current.offsetWidth);
 		setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
 	}, []);
+
 	return (
-		<div className={styles.conteiner}>
-			<h1>What I've been working on</h1>
+		<article className={styles.conteiner}>
+			<h1>{title}</h1>
 			<motion.div
 				ref={carousel}
 				className={styles.carousel}
@@ -74,7 +75,7 @@ const Project = () => {
 				>
 					{projects.map((project) => {
 						return (
-							<motion.div className={styles.project_cart} key={project.index}>
+							<div className={styles.project_cart} key={project.index}>
 								<div className={styles.img_conteiner}>
 									<Image
 										src={photo}
@@ -92,12 +93,12 @@ const Project = () => {
 								<Link href={`/project/${project.slug}`}>
 									<a>VIEW PROJECT ›</a>
 								</Link>
-							</motion.div>
+							</div>
 						);
 					})}
 				</motion.div>
 			</motion.div>
-		</div>
+		</article>
 	);
 };
 

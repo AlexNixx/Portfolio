@@ -7,7 +7,7 @@ import { shimmer, toBase64 } from "../utils/blureDataUrl";
 const Footer = () => {
 	return (
 		<footer className={styles.footer}>
-			<div className={styles.sub_container}>
+			<div className={styles.description}>
 				<h1>Let's start chatting</h1>
 				<p>
 					That's my contact below, i'll glad to help you! <br />
