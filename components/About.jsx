@@ -35,7 +35,7 @@ const About = () => {
 					height={300}
 					width={300}
 					className={styles.avatar}
-					placeholder="blur"
+					// placeholder="blur"
 					blurDataURL={`data:image/svg+xml;base64,${toBase64(
 						shimmer(300, 300)
 					)}`}
