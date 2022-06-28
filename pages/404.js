@@ -8,10 +8,11 @@ const NotFound = () => {
 			<h1>
 				<span>404</span>
 				<br />
-				Page couldn't be found
+				Page couldn&apos;t be found
 			</h1>
 			<p>
-				The requested page either doesn't exist or you don't have access to it.
+				The requested page either doesn&apos;t exist or you don&apos;t have
+				access to it.
 			</p>
 			<a onClick={() => Router.back()}>Go Back</a>
 		</div>

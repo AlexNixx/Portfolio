@@ -8,9 +8,9 @@ const Footer = () => {
 	return (
 		<footer className={styles.footer}>
 			<div className={styles.description}>
-				<h1>Let's start chatting</h1>
+				<h1>Let&apos;s start chatting</h1>
 				<p>
-					That's my contact below, i'll glad to help you! <br />
+					That&apos;s my contact below, i&apos;ll glad to help you! <br />
 					You can reach me any time🙂
 				</p>
 				<a href="mailto: alexnix.mail@gmail.com">alexnix.mail@gmail.com</a>

@@ -13,12 +13,12 @@ const About = () => {
 					<h1>
 						Hey there 👋
 						<br />
-						I'm Alex.
+						I&apos;m Alex.
 					</h1>
 					<h3>Front-End Developer</h3>
 					<p>
-						This is my digital space, where I write about the things I'm working
-						on and share what I've learned.
+						This is my digital space, where I write about the things I&apos;m
+						working on and share what I&apos;ve learned.
 					</p>
 					<button
 						onClick={() =>
