@@ -20,19 +20,17 @@
 	margin: v.$defaul-margin;
 }
 
-.img_conteiner {
-	position: relative;
+.img {
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
-}
-
-.img {
-	position: absolute;
-	object-fit: contain;
+	height: 100%;
+	width: 100%;
+	box-shadow: v.$img-shadow;
 }
 
 .intro_conteiner {
+	display: flex;
+	flex-direction: column;
 	.project_name {
 		font-size: 3.5rem;
 	}
@@ -59,11 +57,9 @@
 			}
 		}
 	}
-
-	.img_intro {
-		height: 30rem;
-		width: 60%;
-		margin: 0 auto;
+	.img {
+		width: 70%;
+		align-self: center;
 	}
 }
 
@@ -72,22 +68,14 @@
 }
 
 .gallery_conteiner {
-	height: 70rem;
-	.parent {
-		display: grid;
-		grid-template-areas:
-			"main second"
-			"main third";
-		grid-gap: 3rem;
-		height: 100%;
-		.div1 {
-			grid-area: main;
-		}
-		.div2 {
-			grid-area: second;
-		}
-		.div3 {
-			grid-area: third;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	.img {
+		width: 60%;
+		margin-bottom: 2rem;
+		&:last-child {
+			margin-bottom: 0;
 		}
 	}
 }
@@ -99,10 +87,9 @@
 	align-items: center;
 	text-align: center;
 	height: 100%;
-	width: 60%;
+	width: 70%;
 	margin: 0 auto 3rem;
-	.img_conteiner {
-		height: 30rem;
+	.img {
 		width: 100%;
 	}
 }
@@ -112,21 +99,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-	.intro_conteiner {
-		.img_intro {
-			height: 30rem;
-			width: 85%;
-			margin: 0 auto;
-		}
-	}
-	.gallery_conteiner {
-		height: 60rem;
-	}
-
-	.problems_conteiner {
-		width: 80%;
-	}
-
 	.lesson_conteiner {
 		width: 70%;
 	}
@@ -143,22 +115,19 @@
 				margin-right: 5rem;
 			}
 		}
-
-		.img_intro {
-			height: 25rem;
+		.img {
 			width: 80%;
-			margin: 0 auto;
+		}
+	}
+	.gallery_conteiner {
+		.img {
+			width: 80%;
 		}
 	}
 
-	.gallery_conteiner {
-		height: 50rem;
-	}
-
 	.problems_conteiner {
-		.img_conteiner {
-			height: 25rem;
-			width: 100%;
+		.img {
+			width: 120%;
 		}
 	}
 
@@ -190,31 +159,20 @@
 				margin: 0;
 			}
 		}
-
-		.img_intro {
-			height: 17rem;
+		.img {
 			width: 100%;
-			margin: 0;
 		}
 	}
 
 	.gallery_conteiner {
-		height: 90rem;
-		.parent {
-			grid-template-areas:
-				"main"
-				"main"
-				"main"
-				"second"
-				"third";
-			grid-gap: 2rem;
+		.img {
+			width: 100%;
 		}
 	}
 
 	.problems_conteiner {
 		width: 100%;
-		.img_conteiner {
-			height: 17rem;
+		.img {
 			width: 100%;
 		}
 	}
@@ -234,19 +192,6 @@
 			ul {
 				margin: 0.5rem 0;
 			}
-		}
-		.img_intro {
-			height: 12rem;
-		}
-	}
-
-	.gallery_conteiner {
-		height: 75rem;
-	}
-
-	.problems_conteiner {
-		.img_conteiner {
-			height: 12rem;
 		}
 	}
 }
