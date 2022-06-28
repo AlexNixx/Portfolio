@@ -32,6 +32,7 @@ const Project = ({ projects, title = "What I've been working on" }) => {
 									<img
 										src={urlFor(project?.title_img)}
 										className={styles.img_cart}
+										alt="title-img"
 									/>
 									<h1>{project.project_name}</h1>
 									<p>{project.short_description}</p>

@@ -21,7 +21,7 @@ const ProjectDeteil = ({ projects, project }) => {
 						<ul>
 							<li>Code</li>
 							<li className={styles.li_link}>
-								<a href={project?.github} target="_blank">
+								<a href={project?.github} target="_blank" rel="noreferrer">
 									Repository
 								</a>
 							</li>
@@ -29,7 +29,7 @@ const ProjectDeteil = ({ projects, project }) => {
 						<ul>
 							<li>Live</li>
 							<li className={styles.li_link}>
-								<a href={project?.live} target="_blank">
+								<a href={project?.live} target="_blank" rel="noreferrer">
 									View site
 								</a>
 							</li>
@@ -39,6 +39,7 @@ const ProjectDeteil = ({ projects, project }) => {
 						<img
 							className={styles.img}
 							src={urlFor(project?.image && project?.image[0])}
+							alt="title-img"
 						/>
 					)}
 				</div>
@@ -50,7 +51,12 @@ const ProjectDeteil = ({ projects, project }) => {
 
 				<div className={`${styles.gallery_conteiner} ${styles.conteiner}`}>
 					{project?.gallary?.map((img, i) => (
-						<img key={i} className={styles.img} src={urlFor(img)} />
+						<img
+							key={i}
+							className={styles.img}
+							src={urlFor(img)}
+							alt="gallery-img"
+						/>
 					))}
 				</div>
 
@@ -63,6 +69,7 @@ const ProjectDeteil = ({ projects, project }) => {
 						<img
 							className={styles.img}
 							src={urlFor(project?.image && project?.image[1])}
+							alt="problem-img"
 						/>
 					)}
 				</div>
