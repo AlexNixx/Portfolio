@@ -8,6 +8,7 @@
 	p {
 		margin: 1.5rem 0;
 		color: v.$grey;
+		width: 70%;
 	}
 }
 
@@ -30,6 +31,14 @@
 			margin: 0 0.5rem 0 0;
 			vertical-align: middle;
 			fill: v.$blue;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.conteiner {
+		p {
+			width: 100%;
 		}
 	}
 }

@@ -2,12 +2,12 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/About.module.scss";
-import avatar from "../public/avatar2.svg";
+import avatar from "../public/avatar.svg";
 import { shimmer, toBase64 } from "../utils/blureDataUrl";
 
 const About = () => {
 	return (
-		<div className={styles.conteiner}>
+		<section className={styles.conteiner}>
 			<div className={styles.main_section}>
 				<div className={styles.info}>
 					<h1>
@@ -32,16 +32,16 @@ const About = () => {
 				</div>
 				<Image
 					src={avatar}
+					alt="avatar"
 					height={300}
-					width={300}
+					width={400}
 					className={styles.avatar}
 					blurDataURL={`data:image/svg+xml;base64,${toBase64(
-						shimmer(300, 300)
+						shimmer(400, 300)
 					)}`}
-					alt="avatar"
 				/>
 			</div>
-		</div>
+		</section>
 	);
 };
 

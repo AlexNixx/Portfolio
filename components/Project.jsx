@@ -7,18 +7,23 @@ import { urlFor } from "../lib/client";
 
 const Project = ({ projects, title = "What I've been working on" }) => {
 	const responsive = {
+		superLargeDesktop: {
+			breakpoint: { max: 3000, min: 2000 },
+			items: 4,
+			slidesToSlide: 1,
+		},
 		desktop: {
-			breakpoint: { max: 3000, min: 1200 },
+			breakpoint: { max: 2000, min: 1200 },
 			items: 3,
 			slidesToSlide: 1,
 		},
 		tablet: {
-			breakpoint: { max: 1200, min: 495 },
+			breakpoint: { max: 1200, min: 471 },
 			items: 2,
 			slidesToSlide: 1,
 		},
 		mobile: {
-			breakpoint: { max: 495, min: 0 },
+			breakpoint: { max: 471, min: 0 },
 			items: 1,
 			slidesToSlide: 1,
 		},
@@ -34,7 +39,7 @@ const Project = ({ projects, title = "What I've been working on" }) => {
 		);
 	};
 	return (
-		<div className={styles.conteiner}>
+		<section className={styles.conteiner}>
 			<h1>{title}</h1>
 			<Carousel
 				responsive={responsive}
@@ -68,7 +73,7 @@ const Project = ({ projects, title = "What I've been working on" }) => {
 					);
 				})}
 			</Carousel>
-		</div>
+		</section>
 	);
 };
 

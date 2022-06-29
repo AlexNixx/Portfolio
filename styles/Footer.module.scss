@@ -19,6 +19,7 @@
 	a {
 		border-bottom: 2px dashed v.$text;
 		&:hover {
+			color: v.$blue;
 			border: none;
 		}
 	}

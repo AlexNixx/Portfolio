@@ -16,19 +16,16 @@
 	text-align: center;
 }
 
-.avatar {
-	filter: drop-shadow(v.$avatar-shadow);
-	animation: float 6s ease-in-out infinite;
-}
-
 .info {
 	flex: 1;
+	padding: 0 1rem;
 	h1 {
 		font-size: 3rem;
 	}
 	h3 {
 		font-size: 1.5rem;
 		margin: 2rem 0;
+		color: v.$blue;
 	}
 	p {
 		color: v.$grey;
@@ -46,17 +43,7 @@
 	}
 }
 
-@keyframes float {
-	0%,
-	100% {
-		transform: translatey(0px);
-	}
-	50% {
-		transform: translatey(-20px);
-	}
-}
-
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 712px) {
 	.main_section {
 		flex-direction: column;
 	}

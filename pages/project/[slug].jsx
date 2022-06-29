@@ -8,7 +8,7 @@ const ProjectDeteil = ({ projects, project }) => {
 	return (
 		<>
 			<div className={styles.wrapper}>
-				<div className={`${styles.intro_conteiner} ${styles.conteiner}`}>
+				<section className={`${styles.intro_conteiner} ${styles.conteiner}`}>
 					<h1 className={styles.project_name}>{project?.project_name}</h1>
 					<p className={styles.description}>{project?.description}</p>
 					<div className={styles.intro_list}>
@@ -42,14 +42,14 @@ const ProjectDeteil = ({ projects, project }) => {
 							alt="title-img"
 						/>
 					)}
-				</div>
+				</section>
 
-				<div className={`${styles.goal_conteiner} ${styles.conteiner}`}>
+				<section className={`${styles.goal_conteiner} ${styles.conteiner}`}>
 					<h1 className={styles.header_conteiner}>Project Purpose and Goal</h1>
 					<p className={styles.description}>{project?.purpose}</p>
-				</div>
+				</section>
 
-				<div className={`${styles.gallery_conteiner} ${styles.conteiner}`}>
+				<section className={`${styles.gallery_conteiner} ${styles.conteiner}`}>
 					{project?.gallary?.map((img, i) => (
 						<img
 							key={i}
@@ -58,9 +58,9 @@ const ProjectDeteil = ({ projects, project }) => {
 							alt="gallery-img"
 						/>
 					))}
-				</div>
+				</section>
 
-				<div className={`${styles.problems_conteiner} ${styles.conteiner}`}>
+				<section className={`${styles.problems_conteiner} ${styles.conteiner}`}>
 					<h1 className={styles.header_conteiner}>
 						Problems and Thought Process
 					</h1>
@@ -72,12 +72,12 @@ const ProjectDeteil = ({ projects, project }) => {
 							alt="problem-img"
 						/>
 					)}
-				</div>
+				</section>
 
-				<div className={`${styles.lesson_conteiner} ${styles.conteiner}`}>
+				<section className={`${styles.lesson_conteiner} ${styles.conteiner}`}>
 					<h1 className={styles.header_conteiner}>Lesson Learned</h1>
 					<p className={styles.description}>{project?.lesson}</p>
-				</div>
+				</section>
 			</div>
 
 			<Project projects={projects} title="Other Project" />
