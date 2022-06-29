@@ -13,7 +13,7 @@ import {
 
 const Skills = () => {
 	return (
-		<article className={styles.conteiner}>
+		<div className={styles.conteiner}>
 			<h1>My Skills</h1>
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
@@ -55,7 +55,7 @@ const Skills = () => {
 					Styled-Components
 				</li>
 			</ul>
-		</article>
+		</div>
 	);
 };
 

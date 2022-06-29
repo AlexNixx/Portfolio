@@ -34,7 +34,7 @@ const Project = ({ projects, title = "What I've been working on" }) => {
 		);
 	};
 	return (
-		<article className={styles.conteiner}>
+		<div className={styles.conteiner}>
 			<h1>{title}</h1>
 			<Carousel
 				responsive={responsive}
@@ -68,7 +68,7 @@ const Project = ({ projects, title = "What I've been working on" }) => {
 					);
 				})}
 			</Carousel>
-		</article>
+		</div>
 	);
 };
 

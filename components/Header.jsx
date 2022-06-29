@@ -9,7 +9,13 @@ const Header = () => {
 		<header className={styles.container}>
 			<Link href="/">
 				<a>
-					<Image className={styles.logo} src={logo} height={20} width={50} />
+					<Image
+						className={styles.logo}
+						src={logo}
+						height={20}
+						width={50}
+						alt="logo"
+					/>
 				</a>
 			</Link>
 		</header>

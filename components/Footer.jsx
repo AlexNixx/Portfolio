@@ -13,10 +13,10 @@ const Footer = () => {
 					That&apos;s my contact below, i&apos;ll glad to help you! <br />
 					You can reach me any time🙂
 				</p>
-				<a href="mailto: alexnix.mail@gmail.com">alexnix.mail@gmail.com</a>
+				<a href="mailto:alexnix.mail@gmail.com">alexnix.mail@gmail.com</a>
 			</div>
 			<div className={styles.container}>
-				<Image src={logo} height={20} width={50}></Image>
+				<Image src={logo} height={20} width={50} alt="logo" />
 				<ul className={styles.social}>
 					<li>
 						<a
