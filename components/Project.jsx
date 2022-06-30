@@ -1,9 +1,9 @@
+import Link from "next/link";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Link from "next/link";
 import styles from "../styles/Project.module.scss";
-import { FaDotCircle, FaRegDotCircle } from "react-icons/fa";
 import { urlFor } from "../lib/client";
+import { FaDotCircle, FaRegDotCircle } from "react-icons/fa";
 
 const Project = ({ projects, title = "What I've been working on" }) => {
 	const responsive = {
@@ -38,6 +38,7 @@ const Project = ({ projects, title = "What I've been working on" }) => {
 			</li>
 		);
 	};
+
 	return (
 		<section className={styles.conteiner}>
 			<h1>{title}</h1>

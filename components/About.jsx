@@ -1,11 +1,9 @@
-import React from "react";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 import styles from "../styles/About.module.scss";
-import avatar from "../public/avatar.svg";
-import { shimmer, toBase64 } from "../utils/blureDataUrl";
-
 import { motion } from "framer-motion";
+import { shimmer, toBase64 } from "../utils/blureDataUrl";
+import avatar from "../public/avatar.svg";
 
 const About = () => {
 	const TextAnimation = {
@@ -30,6 +28,7 @@ const About = () => {
 			transition: { delay: custom * 0.3 },
 		}),
 	};
+
 	return (
 		<motion.section
 			initial="hidden"
@@ -66,10 +65,7 @@ const About = () => {
 					<motion.button
 						custom={3}
 						variants={TextAnimation}
-						onClick={() =>
-							(window.location =
-								"https://drive.google.com/uc?export=download&id=17tKOhx1MYfXvIFGFKZvj5f8Gnuw1IuCi")
-						}
+						onClick={() => (window.location = "")}
 						className={styles.button}
 					>
 						Download CV
