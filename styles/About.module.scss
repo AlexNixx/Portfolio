@@ -21,10 +21,15 @@
 	padding: 0 1rem;
 	h1 {
 		font-size: 3rem;
+		span {
+			display: inline-block;
+			font-size: 3rem;
+			padding: 0 0.5rem;
+		}
 	}
 	h3 {
-		font-size: 1.5rem;
-		margin: 2rem 0;
+		font-size: 1.4rem;
+		margin: 1.5rem 0;
 		color: v.$blue;
 	}
 	p {
