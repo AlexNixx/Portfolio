@@ -41,13 +41,13 @@ const ProjectDeteil = ({ projects, project }) => {
 
 	return (
 		<>
-			<motion.div
-				initial="hidden"
-				whileInView="visible"
-				viewport={{ amount: 0.2, once: true }}
-				className={styles.wrapper}
-			>
-				<section className={`${styles.intro_conteiner} ${styles.conteiner}`}>
+			<div className={styles.wrapper}>
+				<motion.section
+					initial="hidden"
+					whileInView="visible"
+					viewport={{ amount: 0.2, once: true }}
+					className={`${styles.intro_conteiner} ${styles.conteiner}`}
+				>
 					<motion.h1
 						custom={1}
 						variants={TextAnimation}
@@ -99,9 +99,9 @@ const ProjectDeteil = ({ projects, project }) => {
 							alt="title-img"
 						/>
 					)}
-				</section>
+				</motion.section>
 
-				<section
+				<motion.section
 					initial="hidden"
 					whileInView="visible"
 					viewport={{ amount: 0.2, once: true }}
@@ -121,9 +121,9 @@ const ProjectDeteil = ({ projects, project }) => {
 					>
 						{project?.purpose}
 					</motion.p>
-				</section>
+				</motion.section>
 
-				<section
+				<motion.section
 					initial="hidden"
 					whileInView="visible"
 					viewport={{ amount: 0.2, once: true }}
@@ -139,9 +139,9 @@ const ProjectDeteil = ({ projects, project }) => {
 							variants={ImgAnimation}
 						/>
 					))}
-				</section>
+				</motion.section>
 
-				<section
+				<motion.section
 					initial="hidden"
 					whileInView="visible"
 					viewport={{ amount: 0.2, once: true }}
@@ -170,9 +170,9 @@ const ProjectDeteil = ({ projects, project }) => {
 							variants={ImgAnimation}
 						/>
 					)}
-				</section>
+				</motion.section>
 
-				<section
+				<motion.section
 					initial="hidden"
 					whileInView="visible"
 					viewport={{ amount: 0.2, once: true }}
@@ -192,8 +192,8 @@ const ProjectDeteil = ({ projects, project }) => {
 					>
 						{project?.lesson}
 					</motion.p>
-				</section>
-			</motion.div>
+				</motion.section>
+			</div>
 
 			<Project projects={projects} title="Other Project" />
 		</>
